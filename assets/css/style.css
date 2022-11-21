@@ -1,0 +1,575 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+
+*{
+    font-family: 'Nunito', sans-serif;
+   transition: .3s;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+.containerLogin{
+    width: 100%;
+    height:100vh;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.itemLogin{
+ width:50%;
+ height:100vh;
+ overflow: hidden;
+ position: relative;
+}
+.containerFormLogin{
+    width: 200%;
+    height: 100vh;
+    display: flex;
+    justify-content:space-evenly;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.switchcontainerFormLogin{
+    width: 200%;
+    height: 100vh;
+    display: flex;
+    justify-content:space-evenly;
+    position: absolute;
+    top: 0;
+     left: -100%;
+}
+.containerFormLoginItem{
+    width: 50%;
+    height: 100vh;
+}
+.itemLogin:nth-child(1){
+background-color: rgb(48, 7, 66);
+color:white;
+}
+.imgLogin{
+    width: 500px;
+    height: 500px;
+    background-image: url("../login.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.containerInputLogin{
+    width: 50%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.inputLogin{
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+
+}
+.btnInput{
+    padding: 5px;
+    border: 1px solid rgb(48, 7, 66);
+    border-radius: 5px;
+    background-color: rgb(48, 7, 66);
+    color: white;
+}
+.btnInput:hover{
+    padding: 5px;
+    border: 1px solid rgb(48, 7, 66);
+    border-radius: 5px;
+    background-color: white;
+    color: rgb(48, 7, 66);
+}
+.btnInputLink{
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: white;
+    color: rgb(48, 7, 66);
+
+}
+.containerMenuBody{
+    width: 100%;
+    height:100vh;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+}
+.menu{
+    height: 100vh;
+    width: 20%;
+    color: white;
+    background-color: rgb(48, 7, 66);
+}
+.showMenu{
+    height: 100vh;
+    width: 20%;
+    background-color: rgb(48, 7, 66);
+  color:white;
+}
+
+.body{
+    height:100vh;
+    width: 80%;
+    position:relative;
+    overflow: hidden;
+    overflow-y: scroll;
+
+}
+.iconMenu{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 50px;
+    visibility: hidden;
+
+}
+.ComptAdmin{
+    width: 180px;
+    height: 180px;
+    border: 1px solid black;
+    border-radius: 180px;
+    object-fit: cover;
+}
+.itemMenu{
+    width: 90%;
+    border: 1px solid white;
+    border-radius: 5px;
+    background:none;
+    color: white;
+    padding: 6px;
+    margin: 3px;
+
+}
+.itemMenu:hover{
+    width: 90%;
+    border: 1px solid white;
+    border-radius: 5px;
+    background:white;
+    color: rgb(48, 7, 66);
+    cursor: pointer;
+}
+.title{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.listAndState{
+    width:95%;
+    height: 130vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.listAndStateStationnement{
+    height: 150vh;
+}
+.listItem,
+.stateItem{
+    border:1px solid black;
+    border-radius: 5px;
+    height: 100%;
+    position:relative;
+}
+.listItem{
+    width: 78%;
+}
+.stateItem{
+    width: 18%;
+}
+.Icon{
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px ;
+  }
+  .Icon_delete{
+    color: rgb(163, 4, 4);
+    border-color: rgb(163, 4, 4);
+    transition: .3s;
+    cursor: pointer;
+  }
+  .Icon_delete:hover{
+      background-color: rgb(163, 4, 4);
+      color: white;
+      transition: .3s;
+    }
+    .Icon_update{
+      color: rgb(195, 224, 31);
+      border-color: rgb(195, 224, 31);
+      transition: .3s;
+      cursor: pointer;
+    }
+    .Icon_update:hover{
+        background-color: rgb(195, 224, 31);
+        color: white;
+        transition: .3s;
+      }
+      .Icon_details{
+          color: rgb(127, 193, 255);
+          border-color: aquamarine;
+          transition: .3s;
+          cursor: pointer;
+        }
+        .Icon_details:hover{
+            background-color: aquamarine;
+            color: white;
+            transition: .3s;
+          }
+          .btnAdd{
+            position: absolute;
+            right: 15px;
+            top: 15px;
+          }
+          .btnExporterXml{
+            position: absolute;
+            right: 85px;
+            top: 15px;
+          }
+          .formulaire{
+            position:fixed;
+            top: 0;
+            right:-20%;
+            width: 20%;
+            background-color: rgb(48, 7, 66);
+            height: 100%;
+            color: white;
+            z-index: 999999;
+        }
+        .showFormulaire{
+            position:fixed;
+            top: 0;
+            right:0;
+            width: 20%;
+            background-color: rgb(48, 7, 66);
+            height: 100%;
+            color: white;
+            z-index: 999999;
+        }
+        .formInput{
+            width: 90%;
+            text-align: left;
+        }
+        .formInputText{
+            width: 100%;
+            padding: 5px;
+            border: none;
+            outline: none;
+            border: 1px solid rgb(48, 7, 66);
+            border-bottom-color:white;
+            background-color: rgb(48, 7, 66);
+            color: white;
+        }
+.listImgeItem{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 50px;
+
+}
+.containerSearchInput{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 95%;
+}   
+.inputSearch{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 48%;
+    padding: 5px;
+}
+.inputSearchThree{
+    width: 33%;
+}
+.itemLatestAdded{
+    width: 90%;
+    border: 1px solid black;
+    text-align: left;
+    border-radius: 5px;
+    height: 55px;
+    line-height: 55px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5px;
+    padding: 5px;
+}
+.detailForm{
+    position:fixed;
+    top:0;
+    right:-100%;
+    width: 100%;
+    height:100vh;
+    background-color: rgb(48, 7, 66);
+    z-index: 9999999;
+    color: white;
+
+}
+.showDetailForm{
+    color: white;
+    position:fixed;
+    top:0;
+    right:0;
+    width: 100%;
+    height:100vh;
+    background-color: rgb(48, 7, 66);
+    z-index: 9999999;
+    overflow-y: scroll;
+}
+.containerInfoDetails{
+    width:40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   position: relative;
+}
+.containerInfoDetailsItem{
+    width: 50%;
+    /* position: relative;
+    margin-left: 20%; */
+    text-align: left;
+     padding-left:20px;
+}
+.charts{
+    width:95%;
+    border:1px solid black;
+    border-radius: 5px;
+    height: 50vh;
+}
+.containerCharts{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.itemChart{
+    width: 45%;
+    height: 95%;
+
+}
+.containerDetailStion{
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.clientDetail{
+    width: 32%;
+    height: 85%;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.parkingAndStationDetail{
+    width: 62%;
+    height: 85%;
+    border: 1px solid white;
+    border-radius: 5px;
+    position: relative;
+}
+.tableDetail tr td,th{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+}
+#imgParkingDetailStation{
+    position: absolute;
+    top: 10px;
+    left: 80px;
+}
+
+@media(max-width:1200px){
+    .tableDetail tr td,th{
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 10px;
+    }
+    .containerDetailStion{
+        width: 95%;
+        height: 150vh;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    .clientDetail{
+        width: 100%;
+        height: 50%;
+        border: 1px solid white;
+        border-radius: 5px;
+    }
+    .parkingAndStationDetail{
+        width: 100%;
+        height: 50%;
+        border: 1px solid white;
+        border-radius: 5px;
+        overflow: hidden;
+        overflow-x: scroll;
+        position: relative;
+    }
+    #imgParkingDetailStation{
+        position: absolute;
+        top: 10px;
+        left: 80px;
+    }
+    
+    .charts{
+        width:95%;
+        border:1px solid black;
+        border-radius: 5px;
+        height: 120vh;
+    }
+    .containerCharts{
+        width: 100%;
+        height: 100%;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .itemChart{
+        width: 95%;
+        height: 45%;
+    
+    }
+    .containerInfoDetails{
+        width:70%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+    
+    .containerSearchInput{
+        display: block;
+        justify-content:center;
+        align-items: center;
+        width: 95%;
+    }   
+    .inputSearch{
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 100%;
+        padding: 5px;
+    }
+    
+    .formulaire{
+        position:fixed;
+        top: 0;
+        right:-100%;
+        width: 100%;
+        background-color: rgb(48, 7, 66);
+        height: 100%;
+        color: white;
+        z-index: 999999;
+    }
+    .showFormulaire{
+        position:fixed;
+        top: 0;
+        right:0;
+        width: 100%;
+        background-color: rgb(48, 7, 66);
+        height: 100%;
+        color: white;
+        z-index: 999999;
+    }
+
+    .listAndState{
+        width:95%;
+        height: 200vh;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    .listAndStateStationnement{
+     height: 300vh;    
+    }
+    
+    .listItem{
+        border:1px solid black;
+        border-radius: 5px;
+        height: 75%;
+        width:100%;
+    }
+    .stateItem{
+        border:1px solid black;
+        border-radius: 5px;
+        height: 25%;
+        width:100%;
+    }
+   
+    .iconMenu{
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size: 50px;
+        visibility: visible;   
+    }
+    
+    .containerMenuBody{
+        width: 100%;
+        height:100vh;
+        display:block;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    .menu{
+        position: absolute;
+        top: 0;
+        left:-100%;
+        height: 100vh;
+        width: 100%;
+        background-color: rgb(48, 7, 66);
+        z-index: 999;
+        color: white;
+    }
+    .showMenu{
+        position: absolute;
+        top: 0;
+        left:0;
+        height: 100vh;
+        width: 100%;
+        background-color: rgb(48, 7, 66);
+        z-index: 999;
+        color:white;
+    }
+        .body{
+        height:100vh;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+          overflow-y: scroll;
+    }
+    
+.containerInputLogin{
+    width: 80%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+    .containerLogin{
+        width: 100%;
+        height:100vh;
+        display:block;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    .itemLogin:nth-child(1){
+    background-color: rgb(48, 7, 66);
+    color:white;
+    width: 0%;
+    display:none;
+    }  
+    .itemLogin:nth-child(2){
+        width: 100%;
+        height: 100vh;
+            
+       }
+    
+}

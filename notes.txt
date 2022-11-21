@@ -1,0 +1,6 @@
+champs marqués par # représentent les clés étrangères.
+Utilisateur (idUtil, nomUtil , prenUtil, adresseUtil, pass)
+Parking (idPark,photo, nomPark, adPark,  ville, nbPlace , nbPlaceLibre)
+// TypeTarif (idType, nomType)
+// TarifParking (#idPark, #idType , prix)
+Stationnement (idStat , dateStat , #idUtil , #idPark ,prix,typeTarif)
